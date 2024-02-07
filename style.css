@@ -153,11 +153,11 @@ footer {
     .footB {
         flex: 0 0 60%;
     }
-
+/* 
     .footC {
         flex: 0 0 100%;
-    }
-}
+    }*/
+} 
 
 /* footA: site information */
 .footA a {
