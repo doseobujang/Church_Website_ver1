@@ -49,21 +49,24 @@ header {
 }
 
 /* 페이지 title 설정 */
+
 .headernav {
-    justify-content:left;
-    height: 73px;
     background-color: #535353 ;
-    align-items: center;
+    overflow: hidden;
+    font-family: Arial, Helvetica, sans-serif;
+    height: auto;
 }
+
 
 .headernav img {
     width: 150px;
-    height: 75%;
+    height: min-content;
     margin-left: 15px;
     margin-right: 10px;
+    padding: 17.25px 0px;
 }
 
-.bookmark a{
+.headernav a{
     float: left;
     font-size: 16px;
     color: white;
@@ -72,30 +75,50 @@ header {
     text-decoration: none;
 }
 
-.bookmark div{
-    float: left;
-    /*overflow: hidden; */
+
+.title a {
+    padding: 0px;
+
 }
 
-
+.bookmark div{
+    float: left;
+    overflow: hidden;
+}
 
 .bookmark button{
     font-size: 16px;
     border: none;
     outline: none;
     color: white;
-    padding: 14px 16px;
+    padding: 20.25px 22px;
     background-color: inherit;
     margin: 0;
 }
 
-.bookmark a:hover, .service:hover {
-    background-color: #535353;
+.b {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 }
 
+.b a:hover{
+    background-color: #ddd;
+}
 
+.b a{
+    color: black;
+}
 
+.a:hover .b{
+    display: block;
+}
 
+.title a{
+    justify-items: center;
+}
 /* 페이지 전체 a 태그 설정 */
 a {
     color:black;
