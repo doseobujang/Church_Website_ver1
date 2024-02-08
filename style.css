@@ -5,6 +5,12 @@ body {
     height: 100%;
 }
 
+/* 페이지 전체 a 태그 설정 */
+a {
+    color:black;
+    text-decoration: none;
+}
+
 /* header 설정 */
 header {
     border-bottom:1px solid black;
@@ -121,13 +127,6 @@ header {
 .title a{
     justify-items: center;
 }
-/* 페이지 전체 a 태그 설정 */
-a {
-    color:black;
-    text-decoration: none;
-}
-
-
 
 /* footer */
 footer {
