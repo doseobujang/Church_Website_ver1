@@ -58,21 +58,6 @@ header {
 
 /* 페이지 title 설정 */
 
-.title a{
-    padding: 0px;
-    justify-items: center;
-}
-
-.title img {
-    width: 150px;
-    height: min-content;
-    margin-left: 15px;
-    margin-right: 10px;
-    padding: 17.25px 0px;
-}
-
-/* 페이지 nav 설정 */
-
 .headernav {
     background-color: #535353 ;
     overflow: hidden;
@@ -80,7 +65,15 @@ header {
     height: auto;
 }
 
-.title a, .headernav a {
+.headernav .title img {
+    width: 150px;
+    height: min-content;
+    margin-left: 15px;
+    margin-right: 10px;
+    padding: 17.25px 0px;
+}
+
+.headernav a {
     float: left;
     font-size: 16px;
     color: white;
@@ -88,12 +81,12 @@ header {
     padding: 14px 16px;
 }
 
-.headernav div{
+.bookmark div{
     float: left;
     overflow: hidden;
 }
 
-.headernav button{
+.bookmark button{
     font-size: 16px;
     border: none;
     outline: none;
@@ -103,7 +96,7 @@ header {
     margin: 0;
 }
 
-.headernav .B {
+.bookmark .B {
     display: none;
     position: absolute;
     background-color: #f9f9f9;
@@ -111,7 +104,7 @@ header {
 }
 
 
-.headernav .B a{
+.bookmark .B a{
     float:none;
     color: black;
     padding: 12px 16px;
@@ -120,12 +113,17 @@ header {
     text-align: left;
 }
 
-.headernav .B a:hover{
+.bookmark .B a:hover{
     background-color: #ddd;
 }
 
-.headernav .A:hover .B{
+.bookmark .A:hover .B{
     display: block;
+}
+
+.title a{
+    padding: 0px;
+    justify-items: center;
 }
 
 /* footer */
