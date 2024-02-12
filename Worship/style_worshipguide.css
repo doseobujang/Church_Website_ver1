@@ -12,3 +12,8 @@ main{
 .Column{
     flex: 0 0 50%;
 }
+
+.caution{
+    display: inline-block;
+    margin-left: 0.5rem;
+}
