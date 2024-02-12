@@ -80,7 +80,7 @@ header {
     height: auto;
 }
 
-.headernav a {
+.title a, .headernav a {
     float: left;
     font-size: 16px;
     color: white;
