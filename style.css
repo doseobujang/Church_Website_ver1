@@ -61,6 +61,7 @@ header {
 .title a{
     padding: 0px;
     justify-items: center;
+    float:left
 }
 
 .title img {
