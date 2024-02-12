@@ -75,7 +75,7 @@ header {
 }
 
 .headernav a {
-    float: left;
+    float: none;
     font-size: 16px;
     color: white;
     text-align: center;
