@@ -1,0 +1,7 @@
+.TimeRow{
+    display: flex;
+}
+
+.Column1, .Column2{
+    flex: 50%;
+}
