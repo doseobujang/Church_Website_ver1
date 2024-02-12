@@ -58,6 +58,10 @@ header {
 
 /* 페이지 title 설정 */
 
+.title a {
+    padding: 0px;
+}
+
 .headernav {
     background-color: #535353 ;
     overflow: hidden;
@@ -74,8 +78,8 @@ header {
     padding: 17.25px 0px;
 }
 
-.headernav a {
-    float: none;
+.headernav .bookmark a {
+    float: left;
     font-size: 16px;
     color: white;
     text-align: center;
@@ -83,11 +87,6 @@ header {
     text-decoration: none;
 }
 
-
-.title a {
-    padding: 0px;
-
-}
 
 .bookmark div{
     float: left;
