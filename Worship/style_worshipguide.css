@@ -2,6 +2,6 @@
     display: flex;
 }
 
-.Column1, .Column2{
+.Column{
     flex: 50%;
 }
