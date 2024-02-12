@@ -58,10 +58,6 @@ header {
 
 /* 페이지 title 설정 */
 
-.title a {
-    padding: 0px;
-}
-
 .headernav {
     background-color: #535353 ;
     overflow: hidden;
@@ -69,8 +65,7 @@ header {
     height: auto;
 }
 
-
-.headernav img {
+.headernav .title img {
     width: 150px;
     height: min-content;
     margin-left: 15px;
@@ -78,7 +73,7 @@ header {
     padding: 17.25px 0px;
 }
 
-.headernav .bookmark a {
+.headernav a {
     float: left;
     font-size: 16px;
     color: white;
@@ -86,7 +81,6 @@ header {
     padding: 14px 16px;
     text-decoration: none;
 }
-
 
 .bookmark div{
     float: left;
@@ -110,12 +104,18 @@ header {
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 }
 
-.bookmark .B a:hover{
-    background-color: #ddd;
-}
 
 .bookmark .B a{
+    float:none;
     color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.bookmark .B a:hover{
+    background-color: #ddd;
 }
 
 .bookmark .A:hover .B{
@@ -123,6 +123,7 @@ header {
 }
 
 .title a{
+    padding: 0px;
     justify-items: center;
 }
 
