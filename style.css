@@ -129,9 +129,9 @@ header {
 
 }
 .navbar-right img{
-    margin-right: 1rem;
+    /* margin-right: 1rem;
     height: 21.75px;
-    padding-top: 17.25px;
+    padding-top: 17.25px; */
     size: 4rem;
 }
 
