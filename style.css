@@ -126,12 +126,11 @@ header {
 .navbar-right{
     display:flex;
     justify-content: right;
-
+    margin-right: 2rem;
 }
 .navbar-right img{
-    margin-right: 4rem;
+    margin-right: 2rem;
     height: 30px;
-
     padding-top: 12px;
 }
 
