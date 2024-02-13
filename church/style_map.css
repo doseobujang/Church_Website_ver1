@@ -8,3 +8,6 @@ main{
 .column{
     flex: 50%;
 }
+.root_daum_roughmap{
+    z-index: 0;
+}
