@@ -9,5 +9,5 @@ main{
     flex: 50%;
 }
 .root_daum_roughmap{
-    z-index: 1;
+    z-index: 0;
 }
