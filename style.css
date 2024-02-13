@@ -126,6 +126,10 @@ header {
 .navbar-right{
     display:flex;
     justify-content: right;
+    position: relative;
+}
+.navbar-right img{
+    margin-right: 1rem;
 }
 
 .title a{
