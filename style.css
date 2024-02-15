@@ -11,6 +11,25 @@ a {
     text-decoration: none;
 }
 
+/* 페이지 메뉴 설정 */
+input.menu {
+    background: url("img/menu1.svg") no-repeat;
+    background-position: center;
+    border: 0px;
+    padding: 0px;
+}
+
+.side-menu {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    position: absolute;
+    background-color: white;
+    display: none;
+}
+
 /* header 설정 */
 header {
     border-bottom:1px solid black;
@@ -106,25 +125,6 @@ header {
 
 .dropdown_content{
     z-index: 1;
-}
-
-/* 페이지 메뉴 설정 */
-input.menu {
-    background: url("img/menu1.svg") no-repeat;
-    background-position: center;
-    border: 0px;
-    padding: 0px;
-}
-
-.side-menu {
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    width: 100%;
-    z-index: 1;
-    position: absolute;
-    background-color: white;
-    display: none;
 }
 
 

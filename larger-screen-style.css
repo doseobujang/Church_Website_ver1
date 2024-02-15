@@ -11,6 +11,17 @@ a {
     text-decoration: none;
 }
 
+input.menu {
+    background: url("img/menu1.svg") no-repeat;
+    background-position: center;
+    border: 0px;
+    padding: 0px;
+}
+
+.side-menu {
+    display: none;
+}
+
 /* header 설정 */
 header {
     border-bottom:1px solid black;
