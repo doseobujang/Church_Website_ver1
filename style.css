@@ -150,48 +150,12 @@ footer {
     color: #fff;
 }
 
-/* footer menu 화면에 맞게 조정 */
-@media(min-width:768px) {
-    footer .container {
-        display: flex;
-        max-width: 1000px;
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-    .footA {
-        flex: 0 0 40%;
-    }
-
-    .footB {
-        flex: 0 0 60%;
-    }
-/* 
-    .footC {
-        flex: 0 0 100%;
-    }*/
-} 
-
 /* footA: site information */
 .footA a {
     color: inherit;
 }
 
 /* footB: footer menu */
-/* 메뉴 수평 정렬 */
-@media (min-width: 768px) {
-    .footB {
-        display: flex;
-    }
-
-    .footB div {
-        flex: 1;
-    }
-
-    .footB div:not(:first-child) {
-        margin-left: 40px;
-    }
-}
 
 .footB h3 {
     margin-bottom:10px;
