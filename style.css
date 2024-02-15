@@ -126,7 +126,6 @@ header {
 .navbar-right{
     display:flex;
     justify-content: right;
-    margin-right: 2rem;
 }
 .navbar-right img{
     margin-right: 2rem;
