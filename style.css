@@ -118,6 +118,10 @@ header {
     margin-top: 12px;
 }
 
+.navbar-right input {
+    margin-right: 2rem;
+}
+
 .title a{
     padding: 0px;
     justify-items: center;
