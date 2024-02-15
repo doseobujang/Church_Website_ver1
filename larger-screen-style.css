@@ -139,9 +139,11 @@ header {
     justify-content: right;
 }
 .navbar-right img, .navbar-right input{
-    margin-right: 2rem;
-    height: 30px;
-    padding-top: 12px;
+    margin-right: 1rem;
+    margin-left: 1rem;
+    height: 2rem;
+    width: 2rem;
+    margin-top: 12px;
 }
 
 .title a{
