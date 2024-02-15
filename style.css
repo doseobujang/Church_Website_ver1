@@ -107,7 +107,7 @@ header {
 
 .navbar-right{
     display:flex;
-    justify-content: right;
+    justify-content: flex-end;
 
 }
 .navbar-right img, .navbar-right input{
