@@ -11,7 +11,7 @@ a {
     text-decoration: none;
 }
 
-/* 페이지 메뉴 설정
+/* 페이지 메뉴 설정 */
 input.menu {
     background: url("img/menu1.svg") no-repeat;
     background-position: center;
@@ -28,7 +28,7 @@ input.menu {
     position: absolute;
     background-color: white;
     display: none;
-} */
+}
 
 /* header 설정 */
 header {
