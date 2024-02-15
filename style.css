@@ -89,11 +89,14 @@ header {
 .navbar-right{
     display:flex;
     justify-content: right;
+
 }
-.navbar-right img{
-    margin-right: 2rem;
-    height: 30px;
-    padding-top: 12px;
+.navbar-right img, .navbar-right input{
+    margin-right: 1rem;
+    margin-left: 1rem;
+    height: 2rem;
+    width: 2rem;
+    margin-top: 12px;
 }
 
 .title a{
@@ -104,6 +107,24 @@ header {
 .dropdown_content{
     z-index: 1;
 }
+
+/* 페이지 메뉴 설정 */
+input.menu {
+    background: url("img/menu1.svg") no-repeat;
+    background-position: center;
+    border: 0px;
+    padding: 0px;
+}
+
+.side-menu {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+
+}
+
 
 /* footer */
 footer {
