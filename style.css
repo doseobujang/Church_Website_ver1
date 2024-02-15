@@ -83,7 +83,7 @@ header {
 
 /* 페이지 nav 설정 */
 
-.navbar-left div{
+.navbar-left dropdown{
     float: left;
     overflow: hidden;
 }
