@@ -3,193 +3,42 @@
     <head>
         <title>김해시민교회</title>
         <meta charset="UTF-8"/>
-        <!-- 기기에 따라 달라지는 장치의 화면 너비에 맞게 웹 페이지의 너비를 설정. 또한, "initial-scale=1.0" 부분은 브라우저에 의해 웹 페이지가 처음으로 로드될 때 초기 확대/축소 레벨을 설정 -->
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         <link rel="icon" href="img/logo_head.svg"/>
-        <!-- Bootstrap CSS file -->
-        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="style.css"/>
+        <!-- Bootstrap CSS 파일 -->
+        <link href="css/bootstrap.min.css" rel="stylesheet"/>
     </head>
     <body>
-        <!-- Bootstrap JavaScript file (안 쓰면 지워도 됨)-->
+        <!-- Bootstrap JavaScript 파일 -->
         <script src="js/bootstrap.bundle.min.js"></script>
 
-        <!-- Top Header -->
-        <header>
-            <div class="container" id="top-header">
-                <div class="row" id="inner">
-                    <div class="col" id="inner-left">
-                        <a href="https://gimhaesimin.netlify.app/service/worship-guide">예배안내</a>
-                        <a href="https://gimhaesimin.netlify.app/church/map"> 오시는 길 </a>
-                        <a href="https://youtube.com/@coh.s?si=zNhjSBaVsbcJDfhj" class="youtube" target="_blank" title="시민교회 유튜브">유튜브</a>
-                    </div>
-                    <div class="col" id="inner-right">
-                        <a href="#">로그인</a>
-                        <a href="#">회원가입</a>
-                    </div>
-                </div>
-            </div>
-        </header>
+        햄버거
 
-        <!-- header navigation -->
-        <div class="headerNav">
-            <nav class="navbar navbar-secondary bg-secondary">
-                <!-- 어느 화면이든 모두 사용한다. -->
-                <div class="container-fluid">
-                    <a class="navbar-brand" href="#"><img src="img/logo_header.svg" style="width:150px;"/></a>
-
-                    <!-- 네비게이션 버튼 -->
-                    <div class="btn-group">
-                        <button type="button" class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-                            예배
-                        </button>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">라이브</a></li>
-                            <li><a class="dropdown-item" href="#">설교</a></li>
-                            <li><a class="dropdown-item" href="#">예배안내</a></li>
-                        </ul>
-                    </div>
-
-                    <div class="btn-group">
-                        <button type="button" class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-                            성장
-                        </button>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">함께하는 교회</a></li>
-                        </ul>
-                    </div>
-
-                    <div class="btn-group">
-                        <button type="button" class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-                            자료
-                        </button>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">설교 원고</a></li>
-                            <li><a class="dropdown-item" href="#">갤러리</a></li>
-                            <li><a class="dropdown-item" href="#">도움되는 링크</a></li>
-                        </ul>
-                    </div>
-
-                    <div class="btn-group">
-                        <button type="button" class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-                            교육
-                        </button>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">중고등부</a></li>
-                        </ul>
-                    </div>
-
-                    <div class="btn-group">
-                        <button type="button" class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-                            소통
-                        </button>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">커뮤니티</a></li>
-                            <li><a class="dropdown-item" href="#">자주 묻는 질문</a></li>
-                            <li><a class="dropdown-item" href="#">문의</a></li>
-                        </ul>
-                    </div>
-
-                    <div class="btn-group">
-                        <button type="button" class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-                            교회
-                        </button>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">신념</a></li>
-                            <li><a class="dropdown-item" href="#">모시는 사람들</a></li>
-                            <li><a class="dropdown-item" href="#">오시는 길</a></li>
-                        </ul>
-                    </div>
-
-                    <!-- 햄버거 -->
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDarkDropdown" aria-controls="navbarNavDarkDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-
-                </div>
-            </nav>
+        <div class="title">
+            <a href="#">
+                <h1 class="visually-hidden">김해시민교회</h1>
+                <img src="img/logo_header.svg" />
+            </a>
         </div>
 
-        <!-- 본문 -->
-        <div>
-            <p>교회~</p>
-        </div>
+        돋보기
 
-        <!-- footer -->
-        <footer>
-            <div class="container bg-info">
-                <div class="row">
-                    <!-- md >= 768px -->
-                    <div class="col-md-5">
-                        <div class="row row-cols-1">
-                            <div class="col" id="footA">
-                                <h2>김해시민교회</h2>
-                                <p>
-                                    주소: 경상남도 김해시 장유로 190 부영프라자 504호
-                                    <br>
-                                    연락처: 055-323-0691
-                                    <br>
-                                    <a href="https://gimhaesimin.netlify.app/">https://gimhaesimin.netlify.app</a>
-                                </p>
-                            </div>
-                            <div class="col" id="footB">
-                                <h3>SNS</h3>
-                                <ul>
-                                    <li>
-                                        <a href="https://youtube.com/@coh.s?si=zNhjSBaVsbcJDfhj" target="_blank" title="youtube"><img src="img/youtube.svg"/></a>
-                                    </li>
-                                    <li>
-                                        <a href="#" target="_blank" title="blog"><img src="img/blog.svg"/></a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-7" id="footC">
-                        <div class="row">
-                            <div class="col-md-4">
-                                <h3>ABOUT</h3>
-                                <ul>
-                                    <li>
-                                        <a href="https://gimhaesimin.netlify.app/about/address">주소</a>
-                                    </li>
-                                    <li>
-                                        <a href="https://gimhaesimin.netlify.app/church/map">지도</a>
-                                    </li>
-                                    <li>
-                                        <a href="https://gimhaesimin.netlify.app/about/staff">스태프</a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="col-md-4">
-                                <h3>SUPPORT</h3>
-                                <ul>
-                                    <li>
-                                        <a href="https://gimhaesimin.netlify.app/communication/FAQ">자주 묻는 질문</a>
-                                    </li>
-                                    <li>
-                                        <a href="https://gimhaesimin.netlify.app/communication/contactus">문의</a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="col-md-4">
-                                <h3>CONTENTS</h3>
-                                <ul>
-                                    <li>
-                                        <a href="https://gimhaesimin.netlify.app/contents/inform.html">공지사항</a>
-                                    </li>
-                                    <li>
-                                        <a href="https://gimhaesimin.netlify.app/dev/developer">개발자</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">블로그</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="text-center" id="footD">ⓒ KL corp. All rights reserved.</div>
+        <div class="container text-center">
+            <div class="row g-2">
+                <div class="col-6">
+                    <div class="p-3">Custom column padding</div>
+                </div>
+                <div class="col-6">
+                    <div class="p-3">Custom column padding</div>
+                </div>
+                <div class="col-6">
+                    <div class="p-3">Custom column padding</div>
+                </div>
+                <div class="col-6">
+                    <div class="p-3">Custom column padding</div>
                 </div>
             </div>
-        </footer>
+        </div>
     </body>
 </html>
