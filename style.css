@@ -224,24 +224,9 @@ footer {
     background-color:rgba(0,0,0,0.3);
 }
 
-
 /* 미디어 쿼리 */
 /* 페이지 nav 설정 */
-@media screen and (max-width: 768px) {
-    .title {
-        flex-grow:1;
-    }
-
-    .navbar-left {
-        display:none;
-    }
-}
-
 @media screen and (min-width: 769px) {
-    .navbar-left {
-        display:flex;
-    }
-
     /* footer menu 화면에 맞게 조정 */
     footer .container {
         display: flex;
@@ -271,4 +256,20 @@ footer {
         margin-left: 40px;
     }
 
+}
+
+@media screen and (max-width: 959px) {
+    .title {
+        flex-grow:1;
+    }
+    
+    .navbar-left {
+        display:none;
+    }
+}
+
+@media screen and (min-width: 960px) {
+    .navbar-left {
+        display:flex;
+    }
 }
