@@ -1,0 +1,11 @@
+main h3{
+    display: inline;
+}
+
+.subheading{
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+main{
+    margin-bottom: 4rem;
+}
