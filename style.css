@@ -20,7 +20,6 @@ input.menu {
 }
 
 .side-menu {
-    display: flex;
     flex-direction: column;
     height: 100%;
     width: 100%;
@@ -31,12 +30,8 @@ input.menu {
 }
 
 /* header 설정 */
-header {
+header, .top-header {
     border-bottom:1px solid black;
-}
-
-.top-header {
-    border-bottom: 1px solid black;
 }
 
 .top-header a {
@@ -51,9 +46,8 @@ header {
 
 /* inner-left: top navigation */
 .inner-left {
-    display: block;
     justify-content: center;
-} 
+}
 
 .inner-left a {
     height:18px;
@@ -78,6 +72,7 @@ header {
 /* 페이지 title 설정 */
 
 .headernav {
+    display: flex;
     background-color: #535353 ;
     overflow: hidden;
     font-family: Arial, Helvetica, sans-serif;
@@ -100,26 +95,64 @@ header {
     padding: 14px 16px;
 }
 
-/* 페이지 nav 설정 */
 .navbar-left {
-    display:none;
+    justify-content: center;
+    flex-grow: 1;
+}
+
+.navbar-left .dropdown{
+    overflow: hidden;
+}
+
+.navbar-left button{
+    width: 32px;
+    height: 21px;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 20.25px 22px;
+    background-color: inherit;
+    margin-left: 0.8rem;
+    margin-right: 0.8rem;
+
+}
+
+.navbar-left .dropdown_content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+
+.navbar-left .dropdown_content a{
+    float:none;
+    color: black;
+    padding: 12px 16px;
+    display: block;
+    text-align: center;
+}
+
+.navbar-left .dropdown_content a:hover{
+    background-color: #ddd;
+}
+
+.navbar-left .dropdown:hover .dropdown_content{
+    display: block;
 }
 
 .navbar-right{
     display:flex;
     justify-content: flex-end;
-
+    align-items: center;
 }
-.navbar-right img, .navbar-right input{
-    margin-right: 1rem;
-    margin-left: 1rem;
+.navbar-right img, .navbar-right input {
     height: 2rem;
     width: 2rem;
-    margin-top: 12px;
-}
-
-.navbar-right input {
-    margin-right: 2rem;
+    margin:12px;
+    margin-right:30px;
+    flex-grow: 0;
 }
 
 .title a{
@@ -130,7 +163,6 @@ header {
 .dropdown_content{
     z-index: 1;
 }
-
 
 /* footer */
 footer {
@@ -192,4 +224,53 @@ footer {
 
 .footD img:hover {
     background-color:rgba(0,0,0,0.3);
+}
+
+
+/* 미디어 쿼리 */
+/* 페이지 nav 설정 */
+@media screen and (max-width: 768px) {
+    .title {
+        flex-grow:1;
+    }
+
+    .navbar-left {
+        display:none;
+    }
+}
+
+@media screen and (min-width: 769px) {
+    .navbar-left {
+        display:flex;
+    }
+
+    /* footer menu 화면에 맞게 조정 */
+    footer .container {
+        display: flex;
+        max-width: 1000px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .footA {
+        flex: 0 0 40%;
+    }
+
+    .footB {
+        flex: 0 0 60%;
+    }
+
+    /* 메뉴 수평 정렬 */
+    .footB {
+        display: flex;
+    }
+
+    .footB div {
+        flex: 1;
+    }
+
+    .footB div:not(:first-child) {
+        margin-left: 40px;
+    }
+
 }
