@@ -13,19 +13,34 @@
         <!-- Bootstrap JavaScript 파일 -->
         <script src="js/bootstrap.bundle.min.js"></script>
 
-        햄버거
-
+        
+        <!-- 제목 -->
         <div class="title">
             <a href="#">
                 <h1 class="visually-hidden">김해시민교회</h1>
-                <img src="img/logo_header.svg" />
+                <img src="img/logo_header.svg"/>
             </a>
         </div>
 
-        돋보기
+        <!-- 검색 바 -->
+        <!-- set Navbar, background color -->
+        <nav class="navbar bg-body-tertiary">
+            <!-- All screen에서 container -->
+            <div class="container-fluid">
+                <!-- display: flex
+                .navbar에서 flex면 justify-content: space-between (중간 비우고 양쪽으로) -->
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="search" aria-label="search">
+                    <button class="btn btn-ouline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </nav>
 
+        <!-- 기본 메뉴 컨테이너 -->
         <div class="container text-center">
+
             <div class="row g-2">
+                <!-- column 절반 사용 -->
                 <div class="col-6">
                     <div class="p-3">Custom column padding</div>
                 </div>
