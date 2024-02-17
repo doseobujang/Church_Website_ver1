@@ -6,5 +6,16 @@ var Show = {
       } else {
         sidebar.style.right = '-250px';
       }
+    this.Opaquely();
+  },
+
+  Opaquely:function() {
+    var opacityStyle = document.querySelector('#sideIsOpen').style;
+    if(opacityStyle.display === 'none') {
+      opacityStyle.display = 'flex';
+    }
+    else {
+      opacityStyle.display = 'none';
+    }
   }
 }
