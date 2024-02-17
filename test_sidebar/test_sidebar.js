@@ -1,9 +1,10 @@
-document.getElementById('sidebar-toggle').addEventListener('click', function() {
-    var sidebar = document.getElementById('sidebar');
+var Show = {
+  Sidebar:function() {
     var computedStyle = window.getComputedStyle(sidebar);
-    if (computedStyle.left === '-250px') {
-      sidebar.style.left = '0';
-    } else {
-      sidebar.style.left = '-250px';
-    }
-  });
+      if (computedStyle.right === '-250px') {
+        sidebar.style.right = '0';
+      } else {
+        sidebar.style.right = '-250px';
+      }
+  }
+}
