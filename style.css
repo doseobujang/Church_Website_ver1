@@ -174,6 +174,11 @@ input.menu {
     z-index: 1;
 }
 
+/* main tag margin */
+main{
+    margin-top: 85px ;
+}
+
 /* footer */
 footer {
     padding:20px;
