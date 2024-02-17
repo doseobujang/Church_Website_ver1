@@ -170,6 +170,10 @@ input.menu {
     flex-grow: 0;
 }
 
+.dropdown_content {
+    z-index: 1;
+}
+
 /* footer */
 footer {
     padding:20px;
@@ -177,6 +181,8 @@ footer {
     background-color:#2B5566;
     color: #fff;
 }
+
+
 
 /* footA: site information */
 .footA a {
