@@ -30,17 +30,13 @@ input.menu {
 }
 
 /* header 설정 */
-header, .top-header {
-    border-bottom:1px solid black;
-}
-
 .top-header a {
-    font-size: 13px;
+    font-size: 15px;
 }
 
 .inner {
-    display:grid;
-    grid-template-columns:2fr 1fr;
+    display: flex;
+    justify-content: space-between;
     margin: 3px 20px;
 }
 
@@ -50,7 +46,6 @@ header, .top-header {
 }
 
 .inner-left a {
-    height:18px;
     margin:5px;  
 }
 
@@ -61,10 +56,6 @@ header, .top-header {
 }
 
 /* inner-right: sign in/up */
-.inner-right {
-    text-align:right;
-}
-
 .inner-right a {
     padding-top:10px;
 }
@@ -225,6 +216,13 @@ footer {
 }
 
 /* 미디어 쿼리 */
+@media screen and (max-width: 320px) {
+    .top-header a {
+        font-size: 12px;
+    }
+}
+
+
 /* 페이지 nav 설정 */
 @media screen and (min-width: 769px) {
     /* footer menu 화면에 맞게 조정 */
