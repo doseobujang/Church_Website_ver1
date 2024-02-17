@@ -5,9 +5,9 @@
         <meta charset="UTF-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         <link rel="icon" href="img/logo_head.svg"/>
-        <link rel="stylesheet" href="style.css"/>
         <!-- Bootstrap CSS 파일 -->
         <link href="css/bootstrap.min.css" rel="stylesheet"/>
+        <link rel="stylesheet" href="style.css"/>
     </head>
     <body>
         <!-- Bootstrap JavaScript 파일 -->
@@ -15,18 +15,18 @@
 
         
         <!-- 제목 -->
-        <div class="title">
-            <a href="#">
+        <div id="title" class="text-center">
+            <a  href="#">
                 <h1 class="visually-hidden">김해시민교회</h1>
-                <img src="img/logo_header.svg"/>
+                <img src="img/logo_header.svg" class="img-fluid" alt="김해시민교회"/>
             </a>
         </div>
 
         <!-- 검색 바 -->
         <!-- set Navbar, background color -->
-        <nav class="navbar bg-body-tertiary">
+        <nav id="searchBar" class="navbar bg-body-tertiary">
             <!-- All screen에서 container -->
-            <div class="container-fluid">
+            <div class="container-fluid justify-content-center">
                 <!-- display: flex
                 .navbar에서 flex면 justify-content: space-between (중간 비우고 양쪽으로) -->
                 <form class="d-flex" role="search">
@@ -53,7 +53,19 @@
                 <div class="col-6">
                     <div class="p-3">Custom column padding</div>
                 </div>
+                <div class="col-6">
+                    <div class="p-3">전체 메뉴</div>
+                </div>
+                <div class="col-6">
+                    <div class="p-3">
+                        <a href="https://gimhaesimin.netlify.app/">
+                            PC버전
+                        </a></div>
+                </div>
+                <!-- columns 끝 -->
             </div>
+            <!-- row 끝 -->
         </div>
+        <!-- 기본 메뉴 컨테이너 끝 -->
     </body>
 </html>
