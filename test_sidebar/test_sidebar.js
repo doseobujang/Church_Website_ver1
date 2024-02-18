@@ -10,9 +10,9 @@ var Show = {
   },
 
   Opaquely:function() {
-    var opacityStyle = document.querySelector('#sideIsOpen').style;
+    var opacityStyle = document.querySelector('#opacity').style;
     if(opacityStyle.display === 'none') {
-      opacityStyle.display = 'flex';
+      opacityStyle.display = 'block';
     }
     else {
       opacityStyle.display = 'none';

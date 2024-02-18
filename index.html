@@ -9,11 +9,15 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap" rel="stylesheet">
-        <script src="sideMenu.js"></script>
+        <script src="sidebar.js"></script>
     </head>
     <body>
-        <!-- Side Menu -->
-        <div class="side-menu">
+
+        <!-- sidebar -->
+        <div id="opacity" style="display:none"></div>
+        <div id="sidebar">
+          <nav class="sidebar">
+            <!-- Your sidebar content here -->
             <div class="side_menu service">
                 예배
                 <ul>
@@ -63,6 +67,7 @@
                     <li><a href="https://gimhaesimin.netlify.app/church/map"> 오시는 길 </a></li>
                 </ul>
             </div>
+          </nav>
         </div>
 
 
@@ -139,7 +144,7 @@
                 </div>
                 <div class="navbar-right">
                     <img src="img/search1.svg" />
-                    <input type="button" class="menu" onclick="Show.sideMenu()">
+                    <input type="button" id="sidebar-toggle" onclick="Show.Sidebar()">
                 </div>
             </div>
 
