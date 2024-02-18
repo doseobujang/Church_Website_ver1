@@ -95,7 +95,8 @@ a {
     background-color: #ffffff ;
     border: black 10px ;
     height: 65px;
-    overflow: visible;
+    /* 필요없음. 기본값 */
+    /* overflow: visible; */
     border-radius: 10px; /* 이쁘게 하기*/
     font-family: "Gowun Dodum", sans-serif;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /*그림자*/
@@ -131,9 +132,10 @@ a {
     transform: translateX(-50%);
 }
 
-.navbar-left .dropdown{
+/* display: none이라 안 해도 됨. 오히려 그림자만 가림 */
+/* .navbar-left .dropdown{
     overflow: hidden;
-}
+} */
 
 .navbar-left button{
     border: none;
@@ -153,19 +155,18 @@ a {
     display: none;
     position: relative;
     background-color: #ffffff;
-    box-shadow: 0px 4px 8px  rgba(0,0,0,0.1);
     left: 50%; /* Set left to 0 to align with the parent */
     transform: translateX(-50%); /* Adjust to center the content */
     width: 120px;
     z-index: 1;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
+    box-shadow: 0px 4px 8px  rgba(0,0,0,0.1);
 }
 
 .navbar-left .dropdown_content a{
     float: none;
     padding: 15px 10px;
-    color: black;
     display: block;
     font-size: 15px;
     border-radius: 10px;
