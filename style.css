@@ -92,6 +92,7 @@ a {
 
 .headernav {
     display: flex;
+    justify-content: space-between;
     background-color: #ffffff ;
     border: black 10px ;
     height: 65px;
@@ -113,29 +114,28 @@ a {
     margin-bottom: 20px;
     margin-left: 17.602px;
     margin-right: 10px;
-    padding: 0px 0px;
-}
-
-.headernav a {
-    font-size: 18px;
-    color: rgb(0, 0, 0);
-    text-align: center;
+    padding: 0px;
 }
 
 .headernav .title a{
     font-size: 0px;
 }
 
-.navbar-left {
+/* 양옆 공백 맞추려면 쓰면 안 됨. */
+/* .navbar-left {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-}
+} */
 
 /* display: none이라 안 해도 됨. 오히려 그림자만 가림 */
 /* .navbar-left .dropdown{
     overflow: hidden;
 } */
+
+.navbar-left {
+    display: flex;
+}
 
 .navbar-left button{
     border: none;
@@ -147,7 +147,7 @@ a {
     margin-top: 20px;
     margin-bottom: 20px;
     background-color: inherit;
-    width: 120px;
+    /* width: 120px; */
     font-family: "Gowun Dodum", sans-serif;
 }
 
@@ -157,7 +157,7 @@ a {
     background-color: #ffffff;
     left: 50%; /* Set left to 0 to align with the parent */
     transform: translateX(-50%); /* Adjust to center the content */
-    width: 120px;
+    /* width: 120px; */
     z-index: 1;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
@@ -170,6 +170,7 @@ a {
     display: block;
     font-size: 15px;
     border-radius: 10px;
+    text-align: center;
 }
 
 .navbar-left .dropdown_content a:hover{
@@ -180,10 +181,6 @@ a {
     display: block;
 }
 
-.navbar-right{
-    position: absolute;
-    right: 0%;
-}
 .navbar-right img, .navbar-right input {
     height: 2rem;
     width: 2rem;
@@ -204,7 +201,6 @@ footer {
     background-color:#2B5566;
     color: #fff;
 }
-
 
 
 /* footA: site information */
@@ -302,18 +298,37 @@ footer {
 
 }
 
-@media screen and (max-width: 1023px) {
-    /* .title {
-        flex-grow:1;
-    } */
-    
+@media screen and (max-width: 768px) {    
     .navbar-left {
         display:none;
     }
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 769px) and (max-width: 1024px) {
     .navbar-left {
         display:flex;
+    }
+
+    .navbar-left button {
+        padding: 1px 15px;
+        font-size: 16px;
+    }
+
+    .navbar-left button, .navbar-left .dropdown_content {
+        width: 80px;
+    }
+
+    .navbar-left .dropdown_content a {
+        font-size:14px;
+    }
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1440px) {
+    .navbar-left button ,.navbar-left .dropdown_content {
+        width: 115px;
+    }
+
+    .navbar-left .dropdown_content a {
+        font-size:15px;
     }
 }
