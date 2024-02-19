@@ -1,14 +1,25 @@
-
 .root_daum_roughmap{
     z-index: 0;
+    border: 1px solid red;
+}
+
+.bus_route li {
+    padding-bottom: 30px;
 }
 
 /* 미디어 쿼리 */
-@media screen and (max-width: 768) {
-    .row{
+@media screen and (min-width: 768px) {
+    .row {
         display: flex;
+        justify-content: center;
     }
-    .bus_route{
+    .bus_route {
         flex: 50%;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .bus_route {
+        margin: 50px;
     }
 }
