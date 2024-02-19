@@ -8,6 +8,12 @@
 }
 
 /* 미디어 쿼리 */
+@media screen and (max-width: 767) {
+    #daumRoughmapContainer1707545075097 {
+        display: none;
+    }
+}
+
 @media screen and (min-width: 768px) {
     .row {
         display: flex;
@@ -15,6 +21,9 @@
     }
     .bus_route {
         flex: 50%;
+    }
+    #daumRoughmapContainer1708320582479 {
+        display: none;
     }
 }
 
