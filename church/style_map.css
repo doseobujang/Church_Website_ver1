@@ -1,8 +1,3 @@
-.root_daum_roughmap{
-    z-index: 0;
-    border: 1px solid red;
-}
-
 .bus_route li {
     padding-bottom: 30px;
 }
