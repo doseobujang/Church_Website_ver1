@@ -8,7 +8,7 @@ main{
 }
 
 /* 미디어 쿼리 */
-@media screen and (min-width: 768) {
+@media screen and (max-width: 768) {
     .row{
         display: flex;
     }
