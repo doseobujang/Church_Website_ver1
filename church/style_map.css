@@ -2,12 +2,17 @@ main{
     margin-left: 3rem;
     margin-right: 3rem;
 }
-.row{
-    display: flex;
-}
-.column{
-    flex: 50%;
-}
+
 .root_daum_roughmap{
     z-index: 0;
+}
+
+/* 미디어 쿼리 */
+@media screen and (min-width: 768) {
+    .row{
+        display: flex;
+    }
+    .bus_route{
+        flex: 50%;
+    }
 }
