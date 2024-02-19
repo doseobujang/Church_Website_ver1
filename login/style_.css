@@ -3,3 +3,6 @@ img{
     left: 50%;
     transform: translateX(-50%);
 }
+a{
+    margin: 10px 10px;
+}
