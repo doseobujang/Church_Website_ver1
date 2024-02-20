@@ -12,7 +12,10 @@
     background-color: rgb(254, 254, 254);
     border: 1px solid rgba(0, 0, 0, 0.199);
     border-radius: 10px;
+    height: 100%;
 }
+
+
 
 .right-side{
     width: 100%;
@@ -20,6 +23,7 @@
     border: 1px solid rgba(0, 0, 0, 0.202);
     border-radius: 10px;
     padding-left: 20px;
+    height: 100%;
 }
 
 .video{
@@ -42,6 +46,6 @@
 }
 
 .description{
-    height: 900px;
+    height: 100%;
     width: 100%;
 }
