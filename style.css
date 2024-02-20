@@ -49,18 +49,18 @@ a {
 .sidebar a {
     color: white;
 }
-    
-#sidebar-toggle {
-    background: url("img/menu1.svg") no-repeat;
+
+#sidebar-search {
+    background: url("img/search1.svg") no-repeat;
     background-position: center;
     border: 0px;
     padding: 0px;
     height: 65px;
     width: 65px;
 }
-
-#sidebar-search {
-    background: url("img/search1.svg") no-repeat;
+    
+#sidebar-toggle {
+    background: url("img/menu1.svg") no-repeat;
     background-position: center;
     border: 0px;
     padding: 0px;
@@ -340,7 +340,7 @@ footer {
         font-size:12px;
     }
 
-    /* .navbar-right img {
+    #sidebar-search {
         margin-left: 15px;
-    } */
+    }
 }
