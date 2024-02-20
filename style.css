@@ -311,7 +311,7 @@ footer {
         display:none;
     }
 
-    .navbar-right img {
+    #sidebar-search {
         display: none;
     }
 }
