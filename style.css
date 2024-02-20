@@ -152,7 +152,7 @@ a {
     border: none;
     font-size: 18px;
     color: rgb(0, 0, 0);
-    height: 25px;
+    height: 28px;
     padding-left: 30px;
     padding-right: 30px;
     margin-top: 20px;
@@ -170,8 +170,7 @@ a {
     transform: translateX(-50%); /* Adjust to center the content */
     width: 110px;
     z-index: 1;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
+    border-radius: 10px;
     box-shadow: 0px 4px 8px  rgba(0,0,0,0.1);
 }
 
