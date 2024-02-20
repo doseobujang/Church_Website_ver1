@@ -303,7 +303,21 @@ footer {
 
 }
 
-@media screen and (max-width: 768px) {    
+@media screen and (max-width: 375px) {
+    .inner-left {
+        display: none;
+    }
+    
+    .navbar-left {
+        display:none;
+    }
+
+    .navbar-right img {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 376px) and (max-width: 768px) {   
     .navbar-left {
         display:none;
     }
@@ -320,10 +334,14 @@ footer {
     }
 
     .navbar-left button, .navbar-left .dropdown_content {
-        width: 80px;
+        width: 70px;
     }
 
     .navbar-left .dropdown_content a {
-        font-size:14px;
+        font-size:12px;
+    }
+
+    .navbar-right img {
+        margin-left: 15px;
     }
 }
