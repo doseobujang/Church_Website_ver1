@@ -15,92 +15,95 @@
     </head>
     <body>
 
-        <!-- Sidebar -->
-        <script>Write.Sidebar();</script>
+        <!-- SideMenu -->
+        <script>Write.SideMenu();</script>
 
-        <!-- Header -->
-        <script>Write.Header();</script>
+        <div id="content">
+            <!-- Header -->
+            <script>Write.TopHeader();</script>
+            <script>Write.HeaderNav();</script>
 
 
-        <!-- Main Info -->
-        <main>
+            <!-- Main Info -->
+            <main>
 
-            <h2>오시는 길</h2>
+                <h2>오시는 길</h2>
 
-            <hr>
-            <br>
-            <!-- * 카카오맵 - 지도퍼가기 큰 거 -->
-            <!-- 1. 지도 노드 -->
-            <div class="row">
-                <div id="daumRoughmapContainer1707545075097" class="root_daum_roughmap root_daum_roughmap_landing column"></div>
-
-                <!--
-                2. 설치 스크립트
-                * 지도 퍼가기 서비스를 2개 이상 넣을 경우, 설치 스크립트는 하나만 삽입합니다.
-                -->
-                <script charset="UTF-8" class="daum_roughmap_loader_script" src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"></script>
-
-                <!-- 3. 실행 스크립트 큰 거 -->
-                <script charset="UTF-8">
-                    new daum.roughmap.Lander({
-                        "timestamp" : "1707545075097",
-                        "key" : "2i3gt",
-                        "mapWidth" : "640",
-                        "mapHeight" : "360"
-                    }).render();
-                </script>
-
-                <!-- * 카카오맵 - 지도퍼가기 작은 거 -->
+                <hr>
+                <br>
+                <!-- * 카카오맵 - 지도퍼가기 큰 거 -->
                 <!-- 1. 지도 노드 -->
-                <div id="daumRoughmapContainer1708320582479" class="root_daum_roughmap root_daum_roughmap_landing" style="margin: 0 auto;"></div>
+                <div class="row">
+                    <div id="daumRoughmapContainer1707545075097" class="root_daum_roughmap root_daum_roughmap_landing column"></div>
 
-                <!-- 3. 실행 스크립트 -->
-                <script charset="UTF-8">
-                    new daum.roughmap.Lander({
-                        "timestamp" : "1708320582479",
-                        "key" : "2i6by",
-                        "mapWidth" : "320",
-                        "mapHeight" : "220"
-                    }).render();
-                </script>
-                <style>
-                    .root_daum_roughmap .wrap_btn_zoom {
-                        z-index: 2;
-                    }
-                </style>
+                    <!--
+                    2. 설치 스크립트
+                    * 지도 퍼가기 서비스를 2개 이상 넣을 경우, 설치 스크립트는 하나만 삽입합니다.
+                    -->
+                    <script charset="UTF-8" class="daum_roughmap_loader_script" src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"></script>
+
+                    <!-- 3. 실행 스크립트 큰 거 -->
+                    <script charset="UTF-8">
+                        new daum.roughmap.Lander({
+                            "timestamp" : "1707545075097",
+                            "key" : "2i3gt",
+                            "mapWidth" : "640",
+                            "mapHeight" : "360"
+                        }).render();
+                    </script>
+
+                    <!-- * 카카오맵 - 지도퍼가기 작은 거 -->
+                    <!-- 1. 지도 노드 -->
+                    <div id="daumRoughmapContainer1708320582479" class="root_daum_roughmap root_daum_roughmap_landing" style="margin: 0 auto;"></div>
+
+                    <!-- 3. 실행 스크립트 -->
+                    <script charset="UTF-8">
+                        new daum.roughmap.Lander({
+                            "timestamp" : "1708320582479",
+                            "key" : "2i6by",
+                            "mapWidth" : "320",
+                            "mapHeight" : "220"
+                        }).render();
+                    </script>
+                    <style>
+                        .root_daum_roughmap .wrap_btn_zoom {
+                            z-index: 2;
+                        }
+                    </style>
 
 
-                <div class="bus_route column">
-                    <ul>
-                        <li>
-                            부영2차 아파트(1435 | 코아상가 방면)
-                            <br>
-                            13, 15, 22, 24, 26, 44
-                        </li>
-                        <li>
-                            부영2차 아파트(1369 | 갑을장유병원 방면)
-                            <br>
-                            13, 15, 22, 24, 25, 44
-                        </li>
-                        <li>
-                            대동2단지(630199, 1272 | 장유고등학교 방면)
-                            <br>
-                            23, 770
-                        </li>
-                        <li>
-                            대동2단지(2789 | 코아상가 방면)
-                            <br>
-                            23
-                        </li>
-                    </ul>
+                    <div class="bus_route column">
+                        <ul>
+                            <li>
+                                부영2차 아파트(1435 | 코아상가 방면)
+                                <br>
+                                13, 15, 22, 24, 26, 44
+                            </li>
+                            <li>
+                                부영2차 아파트(1369 | 갑을장유병원 방면)
+                                <br>
+                                13, 15, 22, 24, 25, 44
+                            </li>
+                            <li>
+                                대동2단지(630199, 1272 | 장유고등학교 방면)
+                                <br>
+                                23, 770
+                            </li>
+                            <li>
+                                대동2단지(2789 | 코아상가 방면)
+                                <br>
+                                23
+                            </li>
+                        </ul>
+                    </div>
+
                 </div>
+                <br>
+            </main>
 
-            </div>
-            <br>
-        </main>
-
-   
-        <!-- footer -->
-        <script>Write.Footer();</script>
+    
+            <!-- footer -->
+            <script>Write.Footer();</script>
+        </div>
     </body>
 </html>
