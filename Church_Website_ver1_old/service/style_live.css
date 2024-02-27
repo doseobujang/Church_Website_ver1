@@ -1,0 +1,51 @@
+.container{
+    display: flex;
+}
+
+.left-side, .right-side{
+    padding: 0px 10px;    
+}
+
+.left-side{
+    margin-right: 2px;
+    width: 180px;
+    background-color: rgb(254, 254, 254);
+    border: 1px solid rgba(0, 0, 0, 0.199);
+    border-radius: 10px;
+    height: 100%;
+}
+
+
+
+.right-side{
+    width: 100%;
+    background-color: rgb(254, 254, 254);
+    border: 1px solid rgba(0, 0, 0, 0.202);
+    border-radius: 10px;
+    padding-left: 20px;
+    height: 100%;
+}
+
+.video{
+    display: flex;
+}
+
+.videoplayer{
+    height: 315px;
+    width: 560px;
+    margin-right: 10px;
+}
+
+.videodescription{
+    width: 100%;
+    height: 315px;
+}
+
+.videodescription h4{
+    margin-top: 0px;
+}
+
+.description{
+    height: 100%;
+    width: 100%;
+}

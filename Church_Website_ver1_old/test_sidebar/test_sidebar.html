@@ -1,0 +1,128 @@
+<!doctype html>
+<html>
+    <head>
+        <title>김해시민교회</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8"/>
+        <link rel="icon" href="../../img/logo_head.svg"/>
+        <link rel="stylesheet" href="../style.css"/>
+        <link rel="stylesheet" href="test_sidebar.css"/>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap" rel="stylesheet">
+        <script src="test_sidebar.js"></script>
+    </head>
+    <body>
+        
+        <div id="opacity" style="display:none"></div>
+        <div id="sidebar">
+          <nav class="sidebar">
+            <!-- Your sidebar content here -->
+            <div class="side_menu service">
+                예배
+                <ul>
+                    <li><a href="https://gimhaesimin.netlify.app/service/live"> 라이브 </a></li>
+                    <li><a href="https://gimhaesimin.netlify.app/service/service"> 설교 </a></li>
+                    <li><a href="https://gimhaesimin.netlify.app/service/worship-guide"> 예배안내 </a></li>
+                </ul>
+            </div>
+
+            <div class="side_menu strive">
+                성장
+                <ul>
+                    <li><a href="https://gimhaesimin.netlify.app/strive/supported_church"> 함께하는 교회 </a></li>
+                </ul>
+            </div>
+
+            <div class="side_menu info">
+                자료
+                <ul>
+                    <li><a href="https://gimhaesimin.netlify.app/info/service_script"> 설교 원고 </a></li>
+                    <li><a href="https://gimhaesimin.netlify.app/info/gallery"> 갤러리 </a></li>
+                    <li><a href="https://gimhaesimin.netlify.app/info/helpfullinks"> 도움되는 링크 </a></li>
+                </ul>
+            </div>
+
+            <div class="side_menu education">
+                교육
+                <ul>
+                    <li><a href="https://gimhaesimin.netlify.app/education/teen_team"> 중고등부 </a></li>
+                </ul>
+                </div>
+            
+            <div class="side_menu communication">
+                소통
+                <ul>
+                    <li><a href="https://gimhaesimin.netlify.app/communication/community"> 커뮤니티 </a></li>
+                    <li><a href="https://gimhaesimin.netlify.app/communication/FAQ"> 자주 묻는 질문 </a></li>
+                    <li><a href="https://gimhaesimin.netlify.app/communication/contactus"> 문의 </a></li>
+                </ul>
+            </div>
+
+            <div class="side_menu church">
+                교회
+                <ul>
+                    <li><a href="https://gimhaesimin.netlify.app/church/belief"> 신념 </a></li>
+                    <li><a href="https://gimhaesimin.netlify.app/church/helpers"> 섬기는 사람들 </a></li>
+                    <li><a href="https://gimhaesimin.netlify.app/church/map"> 오시는 길 </a></li>
+                </ul>
+            </div>
+          </nav>
+        </div>
+        
+
+        <div id="content">
+            <!--Top Header-->
+            <header>
+                <div class="top-header">
+                    <div class="inner">
+                        <div class="inner-left">
+                            <a href="https://gimhaesimin.netlify.app/service/worship-guide">예배안내</a>
+                            <a href="https://gimhaesimin.netlify.app/church/map"> 오시는 길 </a>
+                            <a href="https://youtube.com/@coh.s?si=zNhjSBaVsbcJDfhj" class="youtube" target="_blank" title="시민교회 유튜브">유튜브</a>
+                        </div>
+                        <div class="inner-right">
+                            <a href="#">로그인</a>
+                            <a href="#">회원가입</a>
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            <!--Header Navigation-->
+            <div class="headernav">
+                <div class="title">
+                    <a href="https://gimhaesimin.netlify.app/index.html">
+                        <img src="../../img/logo_header.svg" />
+                    </a>
+                </div>
+                <div class="navbar-left">
+                    <div class="dropdown service">
+                        <button class="dropbtn">예배</button>
+                    </div>
+                    <div class="dropdown strive">
+                        <button class="dropbtn">성장</button>
+                    </div>
+                    <div class="dropdown info">
+                        <button class="dropbtn">자료</button>
+                    </div>
+                    <div class="dropdown education">
+                        <button class="dropbtn">교육</button>
+                    </div>
+                    <div class="dropdown communication">
+                        <button class="dropbtn">소통</button>
+                    </div>
+                    <div class="dropdown church">
+                        <button class="dropbtn">교회</button>
+                    </div>
+                </div>
+                <div class="navbar-right">
+                    <img src="../img/search1.svg"/>
+                    <input type="button" id="sidebar-toggle" onclick="Show.Sidebar()">
+                </div>
+              </div>
+
+            
+        </div>
+    </body>
+</html>

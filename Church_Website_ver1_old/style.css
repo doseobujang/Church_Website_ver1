@@ -1,0 +1,342 @@
+/* 기본 설정: 페이지 전체 */
+html {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    margin:0;
+    width: 100%;
+    height: 100%;
+    font-family: "Gowun Dodum", sans-serif;
+    font-style: normal;
+    letter-spacing: 1px;
+}
+
+
+/* 페이지 전체 a 태그 설정 */
+a {
+    color:black;
+    text-decoration: none;
+}
+
+/* sidebar 설정 */
+#opacity {
+    position: absolute;
+    top: 0;
+    width:100%;
+    height:100%;
+    z-index:4;
+    background-color : rgb(0, 0, 0, 0.3);
+}
+  
+#sidebar {
+    position: fixed;
+    top: 0;
+    right: -250px; /* Set initial position off the screen */
+    z-index: 5;
+    width: 250px;
+    height: 100%;
+    background-color: #333;
+    transition: right 0.3s ease;
+}
+    
+.sidebar {
+    padding: 20px;
+    color: #fff;
+}
+
+.sidebar a {
+    color: white;
+}
+
+#sidebar-search {
+    background: url("img/search1.svg") no-repeat;
+    background-position: center;
+    border: 0px;
+    padding: 0px;
+    height: 65px;
+    width: 65px;
+}
+    
+#sidebar-toggle {
+    background: url("img/menu1.svg") no-repeat;
+    background-position: center;
+    border: 0px;
+    padding: 0px;
+    height: 65px;
+    width: 65px;
+}
+
+/* header 설정 */
+.top-header a {
+    font-size: 15px;
+}
+
+.inner {
+    display: flex;
+    justify-content: space-between;
+    margin: 3px 20px;
+}
+
+/* inner-left: top navigation */
+.inner-left {
+    justify-content: center;
+}
+
+.inner-left a {
+    margin:5px;  
+}
+
+.inner-left img {
+    width:20px;
+    height:20px;
+    margin-right:8px;
+}
+
+/* inner-right: sign in/up */
+.inner-right a {
+    padding-top:10px;
+}
+
+/* 페이지 title 설정 */
+
+.headernav {
+    display: flex;
+    justify-content: space-between;
+    background-color: #ffffff ;
+    border: black 10px ;
+    height: 65px;
+    /* 필요없음. 기본값 */
+    /* overflow: visible; */
+    border-radius: 10px; /* 이쁘게 하기*/
+    font-family: "Gowun Dodum", sans-serif;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /*그림자*/
+    position: absolute; /* 고정*/
+    /* 움직이기 */
+    left: 1.5%; 
+    width: 97%; /* 띄우기 !*/
+}
+
+.headernav .title img {
+    width: min-content;
+    height: 25px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 0px;
+}
+
+.headernav .title a{
+    font-size: 0px;
+}
+
+/* 양옆 공백 맞추려면 쓰면 안 됨. */
+/* .navbar-left {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+} */
+
+/* display: none이라 안 해도 됨. 오히려 그림자만 가림 */
+/* .navbar-left .dropdown{
+    overflow: hidden;
+} */
+
+.navbar-left {
+    display: flex;
+}
+
+.navbar-left button{
+    border: none;
+    font-size: 18px;
+    color: rgb(0, 0, 0);
+    height: 28px;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: inherit;
+    width: 110px;
+    font-family: "Gowun Dodum", sans-serif;
+}
+
+.navbar-left .dropdown_content {
+    display: none;
+    position: relative;
+    background-color: #ffffff;
+    left: 50%; /* Set left to 0 to align with the parent */
+    transform: translateX(-50%); /* Adjust to center the content */
+    width: 110px;
+    z-index: 3;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px  rgba(0,0,0,0.1);
+}
+
+.navbar-left .dropdown_content a{
+    float: none;
+    padding: 15px 10px;
+    display: block;
+    font-size: 14px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.navbar-left .dropdown_content a:hover{
+    background-color: #ddd;
+}
+
+.navbar-left .dropdown:hover .dropdown_content{
+    display: block;
+}
+
+/* main tag margin */
+main{
+    margin-top: 85px ;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+/* footer */
+footer {
+    padding:20px;
+    border-top:1px solid black;
+    background-color:#2B5566;
+    color: #fff;
+}
+
+
+/* footA: site information */
+.footA a {
+    color: inherit;
+}
+
+/* footB: footer menu */
+
+.footB h3 {
+    margin-bottom:10px;
+    border-bottom:1px solid currentColor;
+    font-size: 14px;
+}
+
+.footB ul {
+    list-style: none;
+    margin:0;
+    padding:0;
+}
+
+.footB a {
+    display: block;
+    padding:5px;
+    color: inherit;
+    font-size:12px;
+}
+
+.footB a:hover {
+    background-color: rgba(0,0,0,0.3);
+}
+
+/* footC: corp */
+.footC {
+    text-align:center;
+    font-size: 12px;
+}
+
+/* footD: SNS menu */
+.footD ul {
+    display: flex;
+    list-style:none;
+    margin: 0;
+    padding: 0;    
+}
+
+.footD img {
+    width:30px;
+    height:30px;
+    margin-right:8px;
+}
+
+.footD img:hover {
+    background-color:rgba(0,0,0,0.3);
+}
+
+/* 미디어 쿼리 */
+@media screen and (max-width: 320px) {
+    .top-header a {
+        font-size: 12px;
+    }
+}
+
+
+/* 페이지 nav 설정 */
+@media screen and (min-width: 769px) {
+    /* footer menu 화면에 맞게 조정 */
+    footer .container {
+        display: flex;
+        max-width: 1000px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .footA {
+        flex: 0 0 40%;
+    }
+
+    .footB {
+        flex: 0 0 60%;
+    }
+
+    /* 메뉴 수평 정렬 */
+    .footB {
+        display: flex;
+    }
+
+    .footB div {
+        flex: 1;
+    }
+
+    .footB div:not(:first-child) {
+        margin-left: 40px;
+    }
+
+}
+
+@media screen and (max-width: 375px) {
+    .inner-left {
+        display: none;
+    }
+    
+    .navbar-left {
+        display:none;
+    }
+
+    #sidebar-search {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 376px) and (max-width: 768px) {   
+    .navbar-left {
+        display:none;
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    .navbar-left {
+        display:flex;
+    }
+
+    .navbar-left button {
+        padding: 1px 15px;
+        font-size: 16px;
+    }
+
+    .navbar-left button, .navbar-left .dropdown_content {
+        width: 70px;
+    }
+
+    .navbar-left .dropdown_content a {
+        font-size:12px;
+    }
+}

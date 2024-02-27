@@ -1,0 +1,15 @@
+
+
+
+
+.TimeRow{
+    display: flex;
+}
+
+.Column{
+    flex: 0 0 50%;
+}
+
+.caution{
+    margin-left: 1rem;
+}
