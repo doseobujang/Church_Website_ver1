@@ -1,0 +1,37 @@
+a {
+    text-decoration: none;
+    color: black;
+}
+
+#title {
+    margin: 30px 0 30px 0;
+}
+
+#searchBar {
+    margin: 30px 0 15px 0;
+}
+
+.P-3 {
+    border: 1px solid black;
+    border-radius: 15px;
+    background-color: aqua;
+}
+
+.P-3 a {
+    width: 100%;
+    height: 100%;
+}
+
+.sns_links .youtube {
+    background: url("img/youtube.svg") no-repeat;
+    background-position: center;
+    height: 32px;
+    width: 32px;
+}
+
+.sns_links .blog {
+    background: url("img/blog.svg") no-repeat;
+    background-position: center;
+    height: 32px;
+    width: 32px;
+}
